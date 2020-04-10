@@ -1,1 +1,371 @@
 /* Add CSS styling here */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header, .portfolio {
+    max-width: 1200px;
+    margin: 0 auto 0.5em auto;
+    padding: 3em;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #1F618D;
+    margin-bottom: 0.5em;
+}
+
+header nav {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto 4em auto;
+    border: 1px solid #1F618D;
+}
+
+nav.mobile {
+    display: none;
+}
+
+header nav a {
+    display: block;
+    width: 25%;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: #1F618D;
+    font-weight: 200;
+    background-color: none;
+    transition: background-color 0.2s ease, width 0.5s ease;
+}
+
+header nav a:hover, header nav a.active {
+    color: #fff;
+    background-color: #1F618D;
+    width: 50%;
+}
+
+header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #505050;
+    margin-bottom: 1em;
+}
+
+header p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    columns: 2;
+    column-gap: 40px;
+    text-align: justify;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(/images/coding-computer-data-depth-of-field-577585.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 11em;
+    color: transparent;
+    text-shadow: 0 0 15px rgba(255,255,255,0.8);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.portfolio h2 {
+    margin: 40px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #505050;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.projects img {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #1F618D;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    border: 10px solid #fff;
+    padding: 30px;
+    color: #fff;
+    width: 30%;
+    background-color: #1F618D;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 1.9em;
+}
+
+footer {
+width: 100%;
+padding: 4em;
+background-color: #85929E;
+display: flex;
+flex-direction: column;
+}
+
+footer>a {
+    align-self: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.6em;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+}
+
+footer a:hover {
+    border-color: #1F618D;
+    color: #1F618D;
+}
+
+.socialMedia {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia a {
+    width: 30px;
+    display: block;
+    margin: 0 20px;
+}
+.socialMedia a .icon {
+    fill: #fff;
+}
+
+.socialMedia a:hover .icon {
+    fill: #1F618D;
+}
+
+@media (max-width: 800px) {
+    header, .portfolio {
+        width: 100%;
+        padding: 2.5em;
+    }
+    header nav a {
+        display: block;
+    width: 25%;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: #1F618D;
+    font-weight: 200;
+    }
+    header p {
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+    .banner h2 {
+        font-size: 8em;
+    }
+    .content {
+     flex-direction: column-reverse;
+    }
+    .projects {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .description {
+        width: 100%;
+        text-align: center;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .projects img {
+        padding: 5px;
+        width: 45%;
+        border: 1px solid #1F618D;
+    }
+  }
+
+  @media (max-width: 500px) {
+    header, .portfolio {
+        width: 100%;
+        padding: 2.5em;
+    }
+    header nav.mobile {
+        width: 100%;
+    }
+    header p {
+        font-size: 1.2em;
+        line-height: 1.8em;
+        columns: 1;
+    }
+
+    header nav.desktop {
+        display: none;
+    }
+
+    header nav.mobile label {
+        width: 100%;
+    }
+    header nav.mobile {
+        border: none;
+        margin-top: 10px;
+        display: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+      }
+      header nav.mobile .navmobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+      }
+      header nav.mobile .navmobile a {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 34px;
+        padding: 20px 0;
+        cursor: pointer;
+      }
+      header nav.mobile .navmobile a:hover {
+        background-color: #dadada;
+        color: #fff;
+      }
+      header nav.mobile #res-nav:checked ~ .navmobile {
+        display: unset;
+      }
+      header nav.mobile label {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      header nav.mobile label img.hamburger {
+        width: 50px;
+      }
+      header nav.mobile #res-nav {
+        position: absolute;
+        top: 20px;
+        z-index: -9999;
+      }
+    .banner h2 {
+        font-size: 11em;
+        text-align: center;
+    }
+    .content {
+     flex-direction: column-reverse;
+    }
+    .projects {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .description {
+        width: 100%;
+        text-align: center;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .projects img {
+        min-width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+
+        border: 1px solid #1F618D;
+    }
+  }
